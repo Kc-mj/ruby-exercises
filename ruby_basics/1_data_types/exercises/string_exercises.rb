@@ -1,10 +1,11 @@
 def concatenate_example(string)
   # use concatenation to format the result to be "Classic <string>"
-  "Classic " << string
+  "Classic #{string} " << string
 end
 
 def concatenate(string)
   # use concatenation to format the result to be "Hello <string>!"
+  "Hello #{string} !"
 end
 
 def substrings(word)
