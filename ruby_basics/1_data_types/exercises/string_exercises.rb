@@ -19,7 +19,7 @@ def capitalize(word)
 end
 
 def uppercase(string)
-  string.uppercase
+  string.upcase
   # uppercase all letters in the string
 end
 
@@ -44,6 +44,6 @@ def reverse(string)
 end
 
 def space_remover(string)
-  string.strip
+  string.gsub(" ", " ")
   # remove all the spaces in the string using gsub
 end
