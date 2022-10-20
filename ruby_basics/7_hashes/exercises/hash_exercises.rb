@@ -2,10 +2,16 @@ def create_favorite_hash(color, number)
   # return a hash with the following key/value pairs:
   # key of color (as a symbol) with value of the color argument
   # key of number (as a symbol) with the value of the number argument
+  create_favorite_hash = { 
+    :color => color,  
+    :number => number
+  }
 end
 
 def favorite_color(favorite_list)
   # return the value of the color key
+  favorite_color[ color ]
+    
 end
 
 def favorite_number(favorite_list)
@@ -36,4 +42,7 @@ end
 
 def merge_favorites(original_list, additional_list)
   # merge the two hashes: original_list and additional_list
+    my_favorites= { original_list }; 
+    new_favorites= { additional_list }; 
+    my_favorites.merge(new_favorites)
 end

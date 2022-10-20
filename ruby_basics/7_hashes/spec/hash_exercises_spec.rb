@@ -11,7 +11,7 @@ RSpec.describe 'Hash Exercises' do
     end
     
     # remove the 'x' from the line below to unskip the test
-    xit 'returns result with an array and hash' do
+    it 'returns result with an array and hash' do
       favorite = create_favorite_hash(['orange', 'green'], { lucky: 7 })
       result = { color: ['orange', 'green'], number: { lucky: 7 } }
       expect(favorite).to eq(result)
@@ -20,7 +20,7 @@ RSpec.describe 'Hash Exercises' do
 
   describe 'favorite color exercise' do
 
-    xit 'returns a string' do
+    it 'returns a string' do
       my_favorites = { color: 'blue', number: 65 }
       expect(favorite_color(my_favorites)).to eq('blue')
     end
@@ -123,7 +123,7 @@ RSpec.describe 'Hash Exercises' do
       expect(merge_favorites(my_favorites, favorite_movie)).to eq(result)
     end
 
-    xit 'returns a hash with an updated value when there is duplicate' do
+    it 'returns a hash with an updated value when there is duplicate' do
       my_favorites = { color: 'emerald green', movie: 'Avengers: Endgame' }
       favorite_movie = { movie: 'Avengers: Infinity War' }
       result = { color: 'emerald green', movie: 'Avengers: Infinity War' }
