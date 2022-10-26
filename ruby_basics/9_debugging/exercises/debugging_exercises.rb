@@ -4,11 +4,12 @@
 # Once this test fails, have a look at the Stack Trace
 # Try to see if you can work your way from the last line, the bottom of the stack
 # To the top, the first line, where the error occured, and ONLY THEN fix the error
-
 def decrement_smallest_value(nested_array)
   smallest_value = nested_array.flatten.max
   nested_array.each do |array|
-    array.each do |current_value|
+
+    array.each do {current_value}
+
       if smallest_value > current_value
         smallest_value = current_valu
       end
